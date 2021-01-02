@@ -15,7 +15,14 @@
 
 Agile is een framework dat in het laatste decennium aan een grote opmars bezig is. Meer en meer bedrijven stappen af van een inflexibel watervalsysteem ten voordele van het flexibele en dynamische Agile framework. Momenteel behoort het tot de standaarden van de industrie. Binnen software development elimineert het enkele van de meest courante problemen die verantwoordelijk zijn voor het falen van veel software projecten.
 
-Het valt te bemerken dat er een grote variatie bestaat in hoe de principes van Agile exact worden toegepast. Frameworks zoals Scrum en Kanban omvatten dezelfde principes met een andere uitwerking. In dit werk zal er geprobeerd worden te achterhalen wat de voor- en nadelen van 2 dergelijke frameworks zijn en hoe deze gecombineerd kunnen worden teneinde een beter projectverloop.
+Het valt te bemerken dat er een grote variatie bestaat in hoe de principes van Agile exact worden toegepast. Frameworks zoals Scrum en Kanban omvatten dezelfde principes met een andere uitwerking. In dit werk zal er geprobeerd worden te achterhalen wat de voor- en nadelen van 2 dergelijke workflows zijn en hoe deze gecombineerd kunnen worden teneinde een beter projectverloop.
+
+De vragen die in dit werk onderzocht zullen worden zijn:
+\begin{itemize}
+\item Welk effect heeft het werken in team op de vooruitgang van het project?
+\item Welk effect heeft het werken in team op het welzijn van de developer (stress, etc.)?
+\item Hoe kunnen beide workflows gecombineerd worden om het beste van beiden te bekomen?
+\end{itemize}
 
 %---------- Stand van zaken ---------------------------------------------------
 
@@ -76,17 +83,39 @@ Veel bedrijven gebruiken echter geen vast framework en hanteren een eigen implem
 \section{Methodologie}
 \label{sec:methodologie}
 
-Hier beschrijf je hoe je van plan bent het onderzoek te voeren. Welke onderzoekstechniek ga je toepassen om elk van je onderzoeksvragen te beantwoorden? Gebruik je hiervoor experimenten, vragenlijsten, simulaties? Je beschrijft ook al welke tools je denkt hiervoor te gebruiken of te ontwikkelen.
+%Hier beschrijf je hoe je van plan bent het onderzoek te voeren. Welke onderzoekstechniek ga je toepassen om elk van je onderzoeksvragen te beantwoorden? Gebruik je hiervoor experimenten, vragenlijsten, simulaties? Je beschrijft ook al welke tools je denkt hiervoor te gebruiken of te ontwikkelen.
+
+\subsection{Verzameling data}
+De data zal verzameld worden door middel van regelmatige enquete. Door de verschillende aard van de twee te onderzoeken workflows en verschillen in project scope, is het noodzakelijk om een correcte schaal te kiezen. Om dit te bewerkstelligen, is het genoeg om naar de structuur van Agile projecten te kijken. Het is een zekerheid dat er bij alle projecten in sprints zal gewerkt worden. Er zal dus per sprint en per week een enquete afgenomen worden die pijlt naar de voortgang van het project en het welzijn van de developer. Er zullen verschillende aspecten gekeken worden als variabelen om af te kunnen leiden of deze al dan niet een effect hebben op beiden. Ten slotte zal er gekeken worden welke aspecten een positieve invloed hebben en welke combinaties er mogelijk zijn.
+De enquete zal worden afgenomen via een Google Form waarbij er voor de voortgang en het welzijn een 5-punt Likertschaal zal gebruikt worden, waarbij een score van 3 neutraal is (voortgang is zoals verwacht, welzijn is normaal), 1 zeer slecht is (sterk achter op schema, zeer veel stress) en 5 zeer goed (sterk voor op schema, welzijn is zeer goed). Tevens zal er extra gegevens gevraagd worden, zoals natuurlijk het type workflow (individueel - teamgebonden), bedrijfscultuur en mogelijke externe factoren die een invloed kunnen hebben op beiden (teamlid die wegvalt, persoonlijke problemen, etc.).
+De enquete zal bij een groot aantal developers worden afgenomen, zodat er genoeg data aanwezig is om elke variabele te kunnen isoleren bij de verwerking.
+
+De te extra onderzoeken variabelen zijn\footnote{Naast de vergelijking tussen de individuele en teamsgebonden workflow. De lijst is niet limitatief, noch zullen ze noodzakelijk allemaal gebruikt worden.}:
+\begin{itemize}
+\item Grootte van het team waarin samengewerkt wordt
+\item Sprintduur in weken
+\item Veranderlijkheid van requirements
+\end{itemize}
+
+\subsection{Verwerking data}
+Het verwerken van de data zal neerkomen op het berekenen van de correlatie tussen de variabelen. Uit de dataset zullen er verschillende clusters worden verdeeld, zodat er steeds slechts één onafhankelijke variabele zal zijn. 
+De verwerking zal gebeuren in R of Python. Hieruit zal een correlatie-coëfficient uit worden berekend. De interpretatie zal simpel zijn. Een correlatie boven een bepaalde threshold ($\pm 0.7$) zal een sterke correlatie aantonen. Bij een coëfficient tussen $\pm 0.3$ en $\pm 0.7$ zal er sprake zijn van een matige correlatie. Hierbij kan gekeken worden of meerdere variabelen samen een sterke correlatie bekomen.
 
 %---------- Verwachte resultaten ----------------------------------------------
 \section{Verwachte resultaten}
 \label{sec:verwachte_resultaten}
 
-Hier beschrijf je welke resultaten je verwacht. Als je metingen en simulaties uitvoert, kan je hier al mock-ups maken van de grafieken samen met de verwachte conclusies. Benoem zeker al je assen en de stukken van de grafiek die je gaat gebruiken. Dit zorgt ervoor dat je concreet weet hoe je je data gaat moeten structureren.
+%Hier beschrijf je welke resultaten je verwacht. Als je metingen en simulaties uitvoert, kan je hier al mock-ups maken van de grafieken samen met de verwachte conclusies. Benoem zeker al je assen en de stukken van de grafiek die je gaat gebruiken. Dit zorgt ervoor dat je concreet weet hoe je je data gaat moeten structureren.
+
+Er wordt verwacht dat een individuele workflow een betere voortgang betekent, maar een lagere score voor het welzijn van de developer zal hebben. De grootte van het team zal omgekeerd evenredig zijn met de voortgang en het welzijn, m.a.w. grotere teams developers zullen meer stress ervaren en minder voortgang maken op het project. Een kortere sprintduur zal meer stress veroorzaken maar tevens voor veel voortgang zorgen. De mate van veranderlijkheid van requirements zal omgekeerd evenredig zijn met zowel de voortgang als het welzijn. 
 
 %---------- Verwachte conclusies ----------------------------------------------
 \section{Verwachte conclusies}
 \label{sec:verwachte_conclusies}
+    Uit de gesimuleerde grafieken blijkt dat een individuele workflow voor voortgang zorgt ten koste van het welzijn van de developer. Tevens is het werken in grote teams nefast voor zowel de voortgang als het welzijn. De sprintduur blijkt omgekeerd evenredig met de voortgang maar recht evenredig met het welzijn. De veranderlijkheid van requirements heeft op zich weinig directe invloed op zowel voortgang als welzijn.
+    
+    Hieruit blijkt dat zowel de individuele workflow als de teamsgebonden workflow sterk onderhevig is aan externe factoren. Er valt echter te concluderen dat er met een combinatie van beide implementaties, waar er in kleine teams van 2 of 3 mensen wordt gewerkt, een balans tussen beide kan bekomen worden. Hierbij kan er een sprintduur van 2 weken worden gehanteerd. De mate van veranderlijkheid van requirements is echter meestal afhankelijk van de klant en niet de implementatie van een Agile framework.
 
-Hier beschrijf je wat je verwacht uit je onderzoek, met de motivatie waarom. Het is \textbf{niet} erg indien uit je onderzoek andere resultaten en conclusies vloeien dan dat je hier beschrijft: het is dan juist interessant om te onderzoeken waarom jouw hypothesen niet overeenkomen met de resultaten.
+
+\section{Addendum - grafieken}
 
