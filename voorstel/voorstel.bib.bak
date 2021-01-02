@@ -1,33 +1,52 @@
 % Encoding: UTF-8
-@ARTICLE{Doll1954,
-  author = {Doll, Richard and Hill, A Bradford},
-  title = {The mortality of doctors in relation to their smoking habits: a preliminary
-	report},
-  journal = {British Medical Journal},
-  year = {1954},
-  volume = {328},
-  pages = {1529-1533},
-  number = {7455},
-  owner = {jbuy519},
-  timestamp = {2014.03.28}
+
+@Misc{Beck2001,
+  author       = {Beck, K. and et al.},
+  date         = {2001},
+  title        = {Principles behind the Agile Manifesto},
+  howpublished = {Website},
 }
 
-@BOOK{Moore2002,
-  title = {Introduction to the Practice of Statistics},
-  publisher = {W. H. Freeman},
-  year = {2002},
-  author = {Moore, David and McCabe, George},
-  owner = {jbuy519},
-  timestamp = {2014.01.28}
+@Article{Kumar2012,
+  author       = {Kumar, Gaurav and Bhatia, Pradeep Kumar},
+  date         = {2012},
+  journaltitle = {International Journal of Computer Technology and Electronics Engineering (IJCTEE)},
+  title        = {Impact of agile methodology on software development process},
+  number       = {4},
+  pages        = {46--50},
+  volume       = {2},
 }
 
-@BOOK{Smits2011,
-  title = {Onderzoek met SPSS en Excel},
-  publisher = {Pearson Education},
-  year = {2011},
-  author = {Smits, Johan and Edens, Ronald},
-  owner = {jbuy519},
-  timestamp = {2014.01.23}
+@Article{Salo2008,
+  author       = {O. Salo and P. Abrahamsson},
+  date         = {2008},
+  journaltitle = {IET Softw.},
+  title        = {Agile methods in European embedded software development organisations: a survey on the actual use and usefulness of Extreme Programming and Scrum},
+  pages        = {58-64},
+  volume       = {2},
+}
+
+@Article{Imreh2011,
+  author       = {Imreh, Robert and Raisinghani, M and others},
+  date         = {2011},
+  journaltitle = {Journal of Emerging Trends in Computing and Information Sciences},
+  title        = {Impact of agile software development on quality within information technology organizations},
+  number       = {10},
+  pages        = {460--475},
+  volume       = {2},
+  publisher    = {Citeseer},
+}
+
+@Book{Franklin2014,
+  author    = {Franklin, Melanie},
+  date      = {2014-03-01},
+  title     = {Agile Change Management},
+  isbn      = {0749470984},
+  pagetotal = {288},
+  publisher = {Kogan Page},
+  url       = {https://www.ebook.de/de/product/21031007/melanie_franklin_agile_change_management.html},
+  ean       = {9780749470982},
+  year      = {2014},
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}
